@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('../Fonts/Gotham/Medium.otf');
+    
+}
+@mixin cinema() {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+nav{
+    position: fixed;
+    left: 0%;
+    right: 0%;
+}
+body{
+    height: 200vh;
+    background-color: rgb(73, 67, 67);
+    font-family: 'Gotham-Medium';
+    overflow-x: hidden;
+}
+.topRow {
+        img{ 
+            display: flex;
+            justify-content: center;
+            margin-right: 50%;
+            height: 100px;
+            padding-left: 270px;
+            padding-top: 5.9px;
+            margin-top: 1.5px;
+            
+        }
+        &__background{
+            width: 100%;
+            height: 110px;
+            position: absolute;
+            top: 0;
+            z-index: -5;
+            &__blue{
+                background-color: #334e9e;
+                height: 110px;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 42%;
+                z-index: 1000;
+            }
+            &__white{
+                background-color: #00ACEC ;
+                height: 50%;
+                width: 180%;
+                position:absolute;
+                bottom: 0%;
+            }
+
+            }           
+        }
+        .rowLinks{
+            display: block;
+            padding: 0;
+            align-content:space-between ;
+            
+
+            &__top{
+                margin-top: -73px;
+                margin-left: 361px;
+                display: flex;
+                align-content:space-between ;
+                justify-content: center;
+                top: 0;
+                right: 50%;
+                &__info {
+                    ul {
+                        margin: 0;
+                        display: flex;                           
+                        li {
+                            font-size: 17px;
+                            font-weight: bold;
+                            line-height: 16px;
+                            margin-left: 40px;
+                            padding-left: 50px;
+                            a{
+                                color: #000000;
+                                opacity: 65%;
+                                transition: 0.2s;
+                                transition-timing-function: linear;
+                                font-family: 'Gotham-Medium';
+                                &:hover{
+                                    opacity: 100%;
+                                }                               
+                            }
+                        }
+                    }
+                }
+                
+            }
+            &__option{
+                margin-top: -63px;
+                margin-left: 341px;
+                &__language{
+                    ul{
+                        display: flex;
+                        justify-content:flex-end;
+                    }
+                    li{
+                        margin-right: 20px;      
+                        padding-top: 44px; 
+
+                        a{
+                            color: #000000;
+                            opacity: 65%;
+                            font-weight: bold;
+                            line-height: 16px;
+                            font-family: 'Gotham-Medium';
+                        }
+                    }  
+                }
+                &__app{
+                   
+                    ul{
+                        display: flex;
+                        justify-content:flex-end;
+                      
+                        li{
+                            margin-right: 13px;      
+                            padding-top: 44px;
+                           
+                        }  
+                    }                 
+                }
+                               
+            }
+    
+            &__bottom{
+                margin-top: -53px;
+                margin-left: 450px;
+                display: flex;
+                align-content:space-between ;
+                justify-content: center;
+                top: 0;
+                right: 50%;
+                ul {
+                    margin: 0;
+                    display: flex; 
+                    li{
+                        margin-right: 10px;      
+                        padding-top: 84px; 
+                        padding-left: 50px;                         
+                       a{
+                            color: white;
+                            margin-left: 4px;
+                            height: 55px;
+                            font-family: 'Gotham-Medium';
+                            font-size: 17px;
+                            font-weight: bold;
+                            padding-left: 2px;
+                            padding-right: 40px;
+                            transition: 0.4s;
+                            transition-timing-function: linear;
+                            &:hover{
+                            background-color: #334E9E;
+                           
+                        }
+                                                    
+                           #little{
+                               font-size: 12px;
+                               line-height: 0;
+                           }
+                        }
+                       
+                    }
+                    }
+                    
+                }
+               
+            }
+        
+        
+    
+               
+            
+        
+                    
+
+            
+        
+        
+    
+
+    
